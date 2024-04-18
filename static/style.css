@@ -158,6 +158,7 @@ li {
 
 #MenuPrincipal {
     position: fixed;
+    padding: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -165,10 +166,32 @@ li {
     z-index: 1000; 
     cursor: pointer;
 }
+
+.nav-item {
+    background: #373737;
+    padding: 11px;
+    margin: 0;
+    border-left: solid #000 1px;
+}
+
+
+.nav-item:hover {
+    background: #c52c5f;
+}
+
 .nav-link a {
     font-family: 'Press Start 2P', cursive; 
     font-size: 08px;
     
+}
+/* Agrega una transición a los elementos del menú */
+.navbar-nav .nav-item .nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Define el efecto de deslizamiento al pasar el mouse sobre los enlaces del menú */
+.navbar-nav .nav-item .nav-link:hover {
+    transform: translateY(-5px);
 }
 
 a {
