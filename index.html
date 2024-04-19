@@ -20,8 +20,8 @@
     <div class="container-fluid"  class="my-4">
 
         <!-- Menú de navegación -->
-        <nav id="MenuPrincipal" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a style="font-family: 'Press Start 2P', cursive; font-size: 10px;" class="navbar-brand" href="#">
+        <nav id="MenuPrincipal" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a style="font-size: 0px;" class="navbar-brand" href="#">
                 <img src="" alt="" height="30">
                 </> Martha
             </a>
@@ -31,22 +31,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" ><i class="bi bi-person"></i> Sobre Mí</a>
+                        <a class="nav-link" href="#about" ><i class="fas fa-user"></i> Sobre Mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Habilidades</a>
+                        <a class="nav-link" href="#skills"><i class="fas fa-tools"></i> Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#education">Educacion</a>
+                        <a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Educacion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a>
+                        <a class="nav-link" href="#projects"><i class="fas fa-laptop-code"></i> Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
+                        <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -59,9 +59,9 @@
             </div> 
             <div id="text-description">
                 <img src="https://cdn.leonardo.ai/users/b921db76-c41d-450c-9699-b6b731a55e85/generations/b43cefa8-7a40-4b0b-8371-76931f7387bf/Default_In_the_center_of_the_scene_a_young_woman_with_short_cu_3.jpg?w=512" alt="Tu Nombre" class="img-fluid rounded-circle mb-3" width="150">
-                <p> <h1 style="font-family: 'Press Start 2P', cursive; font-size: 20px;" id="animated-name" class="display-4">Hola soy, </h1>
+                <p> <h1 id="animated-name" class="display-4"> </h1>
                 <p id="descrip" style="display:none;" class="hidden">
-                    una entusiasta en formación en el mundo del desarrollo front-end, con un profundo amor por la creación de experiencias web cautivadoras y funcionales.
+                    Web Desing
                     </p>
                    
             </div>
@@ -80,18 +80,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="mb-4">Sobre Mí</h2>
-                    <p>¡Hola! Soy Martha, participante en el programa de desarrollo web front-end ofrecido por Oracle en colaboración con Alura Latam.</p>
-                    <p>Comprometida a completar con éxito el programa y aplicar los conocimientos adquiridos en proyectos prácticos.</p>
+                    <p>¡Hola! Soy Martha, participante en el programa de desarrollo web front-end ofrecido por Oracle en colaboración con Alura Latam.
+                    Comprometida a completar con éxito el programa y aplicar los conocimientos adquiridos en proyectos prácticos.</p>
                     <p>Con una licenciatura en Informática, he estado inmersa en el mundo del desarrollo web y el análisis de datos durante 
                         los últimos años. Mi enfoque principal es trabajar en proyectos que desafíen mi creatividad y habilidades técnicas, 
                         siempre buscando aprender y mejorar en cada paso del camino.</p>
                   
                 </div>
-                <div class="col-md-6">
-                    <div class="text-center">
-                        <img src="https://cdn.leonardo.ai/users/b921db76-c41d-450c-9699-b6b731a55e85/generations/666627cd-ec19-4696-bae7-f7d608baba34/variations/Default_character_in_full_body_female_glasses_curly_hair_headp_0_666627cd-ec19-4696-bae7-f7d608baba34_0.png" alt="Tu Nombre" class="img-fluid rounded-circle mb-3" width="200">
-                    </div>
-                </div>
+               
                 <section id="hobbies" class="my-4">
                     <div class="container">
                         <h2>Mis Hobbies</h2>
@@ -128,7 +124,7 @@
 
         <section id="skills" class="my-4">
             <h2>Habilidades y Herramientas</h2>
-            <div class="skills-list">
+            
                 <div class="skill-item">
                     <i class="fab fa-html5"></i>HTML5</p> 
                     <div class="progress">
@@ -243,7 +239,7 @@
                         <i class="fab fa-python"></i> Python, <i class="fab fa-html5"></i> HTML5, 
                         <i class="fab fa-css3"></i> CSS3, <i class="fab fa-js"></i> JavaScript</p>
                     <a href="#" target="_blank">En proceso</a>
-                    <img src="" alt="">
+                    <img src="static/img/ImgEncriptador.png" alt="">
                 </div>
                 <div class="project-item" onmouseover="showImage('imgEncriptador')" onmouseout="hideImage('imgEncriptador')">
                     <h3>Encriptador de Texto</h3>
@@ -253,6 +249,32 @@
 
                     <a href="https://acostamartha.github.io/encriptador.github.io/" target="_blank">Ver proyecto</a>
                     <img src="static/img/ImgEncriptador.png" alt="Slide 1">
+                </div>
+                
+            
+                <div class="project-item">
+                    <h3>Web Para Descargar Audios de IA</h3>
+                    <p>Proyecto personal, permite generar audios escucharlos y luego descargarlos por IA, fue creada en 
+                        <i class="fab fa-python"></i> Python, <i class="fab fa-html5"></i> HTML5, 
+                        <i class="fab fa-css3"></i> CSS3, <i class="fab fa-js"></i> JavaScript</p>
+                    <a href="#" target="_blank">Ver proyecto</a>
+                    <img src="" alt="">
+                </div>
+                <div class="project-item">
+                    <h3>WEB para Convertir Archivos PDF a Excel/Word</h3>
+                    <p>Proyecto personal, permite convertir audios y descargarlos de pdf a excel, fue creada en 
+                        <i class="fab fa-python"></i> Python, <i class="fab fa-html5"></i> HTML5, 
+                        <i class="fab fa-css3"></i> CSS3, <i class="fab fa-js"></i> JavaScript</p>
+                    <a href="#" target="_blank">Ver proyecto</a>
+                    <img src="" alt="">
+                </div>
+                <div class="project-item">
+                    <h3>WEB TiendaOnline de Personalizados</h3>
+                    <p>Proyecto personal, permite realizar pedidos y compras de ejemplo, fue creada en 
+                        <i class="fab fa-python"></i> Python, <i class="fab fa-html5"></i> HTML5, 
+                        <i class="fab fa-css3"></i> CSS3, <i class="fab fa-js"></i> JavaScript</p>
+                    <a href="#" target="_blank">Ver proyecto</a>
+                    <img src="" alt="">
                 </div>
             </div>
         </section>
