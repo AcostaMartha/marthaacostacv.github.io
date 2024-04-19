@@ -8,7 +8,7 @@ body {
 }
 
 .bg-light {
-    background-color: #080808!important;
+    background-color: #ffffff!important;
 }
 
 
@@ -23,6 +23,7 @@ header,
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
     
 }
 
@@ -45,8 +46,15 @@ header {
     border-radius: 15px;
 }
 
-header h1 {
+header h1, #descrip {
     margin: 0;
+    background: linear-gradient(to right, #5e5e5e, #112c33, #404040);
+    -we-webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 20px;
+  
 }
 
 header p {
@@ -75,14 +83,6 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.skill-item {
-    width: 48%;
-    margin-bottom: 20px;
-    background: #2b2b2b;
-    border-radius: 14px;
-    padding: 5px;
 }
 
 .progress {
@@ -121,7 +121,7 @@ li {
     background-color: #0e0e0ec0 !important;
 }
 
-#projects, #skills, #contact {
+#projects, #contact {
     background: #174f67;
     padding: 25px;
     border-radius: 15px;
@@ -132,8 +132,32 @@ li {
     border-bottom: solid 31px #aa1654;
 }
 
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #174f67;
+    align-items: flex-start;
+    flex-direction: row;
+    background: #fffffff0;
+}
 
-#projects h2, #education h2, #skills h2 {
+#skills h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #434343;
+    width: 100%;
+    padding: 20px;
+    border-bottom: solid 1px;
+}
+
+.skill-item {
+    width: 23%;
+    margin: 16px;
+    color: #272727;
+}
+
+#projects h2, #education h2 {
 
         color: #ba1670;
         background: #0e0e0e;
@@ -154,7 +178,9 @@ li {
     border-radius: 5px;
 }
 
-
+#MenuPrincipal a {
+    font-size: 10px;
+}
 
 #MenuPrincipal {
     position: fixed;
@@ -162,21 +188,23 @@ li {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333; 
+    background-color: #c6c6c6; 
     z-index: 1000; 
     cursor: pointer;
+    font-family: 'Press Start 2P', cursive; 
+
 }
 
 .nav-item {
-    background: #373737;
+ 
     padding: 11px;
     margin: 0;
-    border-left: solid #000 1px;
+    
 }
 
 
 .nav-item:hover {
-    background: #c52c5f;
+    border-bottom: solid 1px #7b0c315a;
 }
 
 .nav-link a {
@@ -184,6 +212,16 @@ li {
     font-size: 08px;
     
 }
+
+.navbar-light .navbar-toggler {
+    background-color: #989898 !important;
+}
+
+.navbar-toggler-icon {
+
+    color: #ffffffc0;
+}
+
 /* Agrega una transición a los elementos del menú */
 .navbar-nav .nav-item .nav-link {
     transition: transform 0.3s ease-in-out;
@@ -313,17 +351,28 @@ h3 {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s, transform 0.8s, -webkit-transform 0.8s;
-    padding: 15px;
-     background: #d1d1d1;
+    background-color: #ffffff;
     padding: 25px;
-    border-radius: 15px;
-    color: #804062;
-    border: solid 2px #3e3e3e;
-    border-top: solid #aa1654 48px;
-    border-bottom: solid #174f67 48px;
+    margin: 0;
+}
 
- 
+#about .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
 
+#about h2 {
+    border-bottom: solid #ccc 1px;
+    color: #4e4e4e;
+    padding: 31px;
 }
 
 /* Estilo activo para la sección de "Sobre Mí" */
